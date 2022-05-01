@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale_blue: hsl(225, 100%, 94%);
+    --bright_blue: hsl(245, 75%, 52%);
+    --very_pale_blue: hsl(225, 100%, 98%);
+    --desaturated_blue: hsl(224, 23%, 55%);
+    --dark_blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color: var(--pale_blue);
+}
+
+#container {
+    width: 325px;
+    height: 570px;
+    margin: 55px auto 45px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+}
+
+#container .part-1 {
+    background-color: rgb(255, 255, 255);
+}
+#container .part-1 .imga {
+    width: 325px;
+}
+#container .part-1 h2 {
+    margin: 37px auto 29px;
+    text-align: center;
+    font-weight: 900;
+}
+#container .part-1 p {
+    color: var(--desaturated_blue);
+    text-align: center;
+    font-weight: 500;
+    word-spacing: -1px;
+}
+#container .part-2 {
+    margin-bottom: 24px;
+}
+#container .part-2 .ert {
+    display: flex;
+    background-color: var(--very_pale_blue);
+    height: 80px;
+    width: 283px;
+    margin-top: 24px;
+    margin-left: 21px;
+    border-radius: 15px;
+    align-items: center;
+}
+#container .part-2 .ycono {
+    margin-left: 15px;
+}
+#container .part-2 a {
+    padding-left: 36px;
+    color: var(--bright_blue);
+}
+#container .part-2 h4 {
+    font-weight: 900;
+    margin-left: 23px;
+    width: 83px;
+    white-space: nowrap;
+    margin-top: -24px;
+}
+#container .part-2 p {
+    margin-bottom: -21px;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--desaturated_blue);
+    margin-left: -81px;
+}
+
+#container .part-3 .button-1 {
+    background-color: var(--bright_blue);
+    color: white;
+    display: flex;
+    margin: 18px auto 18px;
+    padding: 18px 66px;
+    border-radius: 10px;
+    border: 0;
+}
+#container .part-3 .button-2 {
+    border: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 28px auto 30px;
+    font-weight: 500;
+    color: var(--desaturated_blue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 20px;
+    }
+    #container {
+        margin-top: 103px;
+        margin-left: 495px;
+        width: 450px;
+        height: 700px;
+    }
+    #container .part-1 .imga {
+        width: 100%;
+        height: 221px;
+    }
+
+    #container .part-2 .ert {
+        margin-top: 24px;
+        width: 355px;
+    }
+    #container .part-2 .ert a {
+        display: flex;
+        text-align: right;
+        padding: 97px;
+    }
+
+    #container .part-3 .button-1 {
+        margin-top: 34px;
+    }
+    #container .part-3 .button-2 {
+        display: flex;
+    }
+}
